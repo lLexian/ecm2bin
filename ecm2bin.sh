@@ -4,7 +4,7 @@
 
 main_process () {
 
-	input_1=$(zenity --file-selection --icon-name=applications-games --title="Select The *.bin.ecm File You Wish To Convert" --file-filter="*.ecm" 2> /dev/null)
+	input_1=$(zenity --file-selection --icon-name=applications-games --title="Select The *.ecm File You Wish To Convert" --file-filter="*.ecm" 2> /dev/null)
 
 	echo ""ecm2bin "'$input_1'" "'$input_1.bin'""" | xclip;
 
