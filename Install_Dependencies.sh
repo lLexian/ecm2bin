@@ -1,5 +1,3 @@
 #!/bin/bash
-echo on
-cat .Dependencies | xargs sudo apt-get -y install
-
-chmod +x Install_Dependencies.sh
+echo Installing $(cat Dependencies)...
+sudo pacman -S $(cat Dependencies)
